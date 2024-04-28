@@ -1,8 +1,7 @@
 secrets.h
 influxdb.h
-
-# Created by https://www.toptal.com/developers/gitignore/api/platformio,visualstudiocode,c++
-# Edit at https://www.toptal.com/developers/gitignore?templates=platformio,visualstudiocode,c++
+# Created by https://www.toptal.com/developers/gitignore/api/c++,platformio,visualstudiocode,kicad
+# Edit at https://www.toptal.com/developers/gitignore?templates=c++,platformio,visualstudiocode,kicad
 
 ### C++ ###
 # Prerequisites
@@ -38,6 +37,46 @@ influxdb.h
 *.out
 *.app
 
+### KiCad ###
+# For PCBs designed using KiCad: https://www.kicad.org/
+# Format documentation: https://kicad.org/help/file-formats/
+
+# Temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups
+*.kicad_prl
+*.sch-bak
+*~
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+
+# Netlist files (exported from Eeschema)
+*.net
+
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
+
+# Exported BOM files
+*.xml
+*.csv
+
+### KiCad Patch ###
+rescue-backup/
+
+*.tsv
+bom/
+
+# Gerber export output
+out/
+
 ### PlatformIO ###
 .pioenvs
 .piolibdeps
@@ -64,4 +103,4 @@ influxdb.h
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/platformio,visualstudiocode,c++
+# End of https://www.toptal.com/developers/gitignore/api/c++,platformio,visualstudiocode,kicad
